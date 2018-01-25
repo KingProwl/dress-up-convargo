@@ -3,6 +3,7 @@
 body , html {
     padding: 0;
     margin: 0;
+    background-color: #8DC4FD;
     /*background-image: url(img/ban.jpg);*/
 }
 
@@ -99,10 +100,26 @@ a, a:hover {
     margin-top: 3%;
 }
 
+/* Partie Convaro */
+
 .ex {
     margin-top: 4%;
+    align-content: center;
+    background-color:#BDBFBF;
+    height: 300px;
 }
 
 .ex h2 {
     text-align: center;
 }
+
+
+
+/* Footer */
+
+.footer {
+    background-color: #2C3E50;
+    color: #ffffff; 
+    align-content: center;
+}
+
