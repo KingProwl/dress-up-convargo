@@ -65,7 +65,7 @@ a, a:hover {
 
 .inner-banner {
     position: absolute;
-    top: 70%;
+    top: 80%;
     width: 100%;
     text-align: center;
 }
@@ -90,13 +90,13 @@ a, a:hover {
     text-align: center;
 }
 
-.about article h2{
+.about article h2 {
     text-align: center;
+    
 }
 
 .about article {
     margin-top: 3%;
-
 }
 
 .ex {
