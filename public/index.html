@@ -11,6 +11,11 @@
       <link rel="stylesheet" href="../public/style.css">
       <title>CSS/HTML Workshop with Convargo</title>
       
+      <SCRIPT LANGUAGE="javascript">
+      focusMethod = function getFocus() {           
+        document.getElementById("truck").focus();
+      }
+      </SCRIPT>
 
   </head>
 
@@ -37,7 +42,7 @@
       </div>
       <div class="inner-banner">
         <h1> Welcome on this workshop</h1>
-        <button class="btn btn-custom"> Compute your price ! </button>
+        <button class="btn btn-custom" onclick="focusMethod()"> Compute your price ! </button>
       </div>
     </section>
     <!-- Fin Banniere -->
@@ -46,7 +51,7 @@
     <section class="container-fluid about">
       <div calss="container">
         <div class="row">
-          <article class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+          <article class="col-md-9 col-lg-9 col-xs-9 col-sm-9">
             <h2 id="about"> What is Convargo ? </h2>
             <p> Convargo wants to revolutionise the freight industry, by connecting shippers with truckers in real time via a web application.
                 The Goods freight transport sector is a key sector of the Europe (even worldwilde) economy: 
@@ -75,7 +80,7 @@
     <section class="container-fluid ex">
         <h2>Compute your price </h2>
             <div  id="trucker">
-                <input class="name" type="text" placeholder="Trucker name"/>
+                <input class="name" type="text" placeholder="Trucker name" id="truck"/>
                 <input class="price-by-km" type="number" placeholder="Price by km"/>
                 <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
             </div>      
@@ -91,6 +96,8 @@
     </section>
     <!-- End Compute Price -->
     
+    <!-- Footer -->
+      
     
     <div id="actors"></div>
 
