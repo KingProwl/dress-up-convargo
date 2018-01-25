@@ -8,26 +8,92 @@
 
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+      <link rel="stylesheet" href="../public/style.css">
       <title>CSS/HTML Workshop with Convargo</title>
+      
 
   </head>
 
   <body>
-    <div id="trucker">
-      <input class="name" type="text" placeholder="Trucker name"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
-      <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
-    </div>
-    <div id="shipper">
-      <input class="name" type="text" placeholder="Shipper name"/>
-      <input class="distance" type="number" placeholder="Distance in km"/>
-      <input class="volume" type="number" placeholder="Volume in m3"/>
-      <input class="option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
-    <div id="actors"></div>
     
+    <!-- Header -->
+    
+    <header class="container-fluid header">
+      <div class="container">
+        <a href="#" class="logo"> HTML WORKSHOP </a>
+        <nav class="menu">
+          <a href="#"> Home</a>
+          <a href="#about"> About Convargo </a>
+          <a href="#"> Contact </a>
+        </nav>
+      </div>
+    </header>
+    <!-- Fin Header -->
+
+    <!-- Banniere -->
+    <section class="container-fluid banner">
+      <div class="ban">
+        <img src="img/ban.jpg" alt="Banniere du site">
+      </div>
+      <div class="inner-banner">
+        <h1> Welcome on this workshop</h1>
+        <button class="btn btn-custom"> Compute your price ! </button>
+      </div>
+    </section>
+    <!-- Fin Banniere -->
+
+    <!-- About Convargo -->
+    <section class="container-fluid about">
+      <div calss="container">
+        <div class="row">
+          <article class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+            <h2 id="about"> What is Convargo ? </h2>
+            <p> Convargo wants to revolutionise the freight industry, by connecting shippers with truckers in real time via a web application.
+                The Goods freight transport sector is a key sector of the Europe (even worldwilde) economy: 
+                <ul>
+                  <li>300 billion euros in Europe </li>
+                  <li>43 billion euros in France</li>
+                  <li>highly fragmented with more than 40,000 road transport companies in France</li>
+                  <li>under efficient: ⅓ trucks drive empty on Fance roads!</li>
+                </ul>
+               
+                The Convargo platform allows shippers to:
+                <ul>
+                  <li>access directy to a wide range of road transport companies with available loading capacity</li>
+                  <li> compute and display the transport price calculated according to the best opportunities on the market at a time T</li>
+                  <li>track in real-time the goods delivery</li>
+                  <li>access to proof of transport and dematerialized invoices </li>
+                </ul>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!--End About Convargo -->
+
+    <!-- Compute Price -->
+    <section class="container-fluid ex">
+        <h2>Compute your price </h2>
+            <div  id="trucker">
+                <input class="name" type="text" placeholder="Trucker name"/>
+                <input class="price-by-km" type="number" placeholder="Price by km"/>
+                <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
+            </div>      
+            <div id="shipper">
+                <input class="name" type="text" placeholder="Shipper name"/>
+                <input class="distance" type="number" placeholder="Distance in km"/>
+                <input class="volume" type="number" placeholder="Volume in m3"/>
+                <input class="option" type="checkbox" placeholder="Deductible option"/>
+            </div>
+            <div>
+            <button id="compute">Compute</button>
+            </div>
+    </section>
+    <!-- End Compute Price -->
+    
+    
+    <div id="actors"></div>
+
     <script src="convargo.js"></script>
     <script src="index.js"></script>
 
