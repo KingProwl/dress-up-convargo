@@ -29,6 +29,7 @@
     const volume = document.querySelector('.volume').value;
     const option = document.querySelector('.option').checked;
     const actors = CONVARGO.payActors(trucker, distance, volume, option);
+    alert("Les résultats sont en bas de la page je n'arrive pas à les déplacer !");
 
     render(actors);
 

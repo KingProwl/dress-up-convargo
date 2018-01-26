@@ -15,8 +15,13 @@
       <title>CSS/HTML Workshop with Convargo</title>
       
       <SCRIPT LANGUAGE="javascript">
+
       focusMethod = function getFocus() {           
         document.getElementById("truck").focus();
+      }
+
+      focusMethod2 = function getFocus2() {
+        document.getElementById("test").focus();
       }
       </SCRIPT>
 
@@ -99,7 +104,7 @@
               </br>
           </div>
           <div>
-          <button id="compute">Compute</button>
+          <button id="compute"  onclick="focusMethod2()">Compute</button>
           </div>
       </div>
     </section>
@@ -142,7 +147,7 @@
                   <!-- Form actions -->
                   <div class="form-group">
                     <div class="col-md-12 text-right">
-                      <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                      <button type="submit" class="btn btn-primary btn-lg" id="test">Submit</button>
                     </div>
                   </div>
                 </fieldset>
