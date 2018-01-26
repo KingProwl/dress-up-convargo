@@ -116,6 +116,10 @@ a, a:hover {
     text-align: center;
 }
 
+button  {
+    border-radius: 1000px;
+}
+
 
 
 /* Footer */
